@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-sharp\\snake-sharp.csproj",
-      "projectName": "snake-sharp",
-      "projectPath": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-sharp\\snake-sharp.csproj",
+      "projectUniqueName": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-back\\snake-back.csproj",
+      "projectName": "snake-back",
+      "projectPath": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-back\\snake-back.csproj",
       "packagesPath": "C:\\Users\\Adri\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-sharp\\obj\\",
+      "outputPath": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-back\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -729,6 +729,7 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
