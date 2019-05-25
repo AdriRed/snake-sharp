@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\Adri\\Documents\\Visual Studio Projects\\snake-sharp\\snake-sharp\\snake-sharp.csproj": {}
+    "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-sharp\\snake-sharp.csproj": {}
   },
   "projects": {
-    "D:\\Users\\Adri\\Documents\\Visual Studio Projects\\snake-sharp\\snake-sharp\\snake-sharp.csproj": {
+    "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-sharp\\snake-sharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\Adri\\Documents\\Visual Studio Projects\\snake-sharp\\snake-sharp\\snake-sharp.csproj",
+        "projectUniqueName": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-sharp\\snake-sharp.csproj",
         "projectName": "snake-sharp",
-        "projectPath": "D:\\Users\\Adri\\Documents\\Visual Studio Projects\\snake-sharp\\snake-sharp\\snake-sharp.csproj",
+        "projectPath": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-sharp\\snake-sharp.csproj",
         "packagesPath": "C:\\Users\\Adri\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\Adri\\Documents\\Visual Studio Projects\\snake-sharp\\snake-sharp\\obj\\",
+        "outputPath": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-sharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
