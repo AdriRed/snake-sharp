@@ -5,7 +5,7 @@ Snake game on C# by Adrià Rojo
 Im a student of programming and this project is about (suprise xd) snake game on console based c#.
 
 ## About this project
-Funcionalities are added in `back-end` branch.
+Funcionalities are added in `Development` branch.
 
 ### Added Functionalities
 * Snake Controls (Example: @*****)
