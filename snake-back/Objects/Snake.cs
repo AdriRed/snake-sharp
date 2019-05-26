@@ -3,22 +3,44 @@ using System.Collections.Generic;
 
 namespace snake_back.Objects
 {
-    internal class Snake
+    public class Snake
     {
-        private Head First;
-        private List<Body> Torso;
+        private Leader Head;
+        private List<Section> Tail;
 
         public Snake()
         {
-            First = new Head(0, 0);
-            Torso = new List<Body>();
+            Head = new Leader(0, 0);
+            Tail = new List<Section>();
 
-            Torso.Add(new Body());
-            Torso.Add(new Body());
-            Torso.Add(new Body());
-
+            Tail.Add(new Section(Head));
+            AddSection();
+            AddSection();
         }
 
+        public void Move()
+        {
+            Head.Forward();
+            UpdateTail();
+            
+        }
 
+        private void UpdateTail()
+        {
+            for (int i = Tail.Count - 1; i >= 0; i--)
+            {
+                Tail[i].MoveToFatherPosition();
+            }
+        }
+
+        public void AddSection ()
+        {
+            Tail.Add(new Section(LastSection()));
+        }
+
+        internal IMovingEntity LastSection ()
+        {
+            return Tail[Tail.Count - 1];
+        }
     }
 }
