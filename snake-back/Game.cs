@@ -11,7 +11,7 @@ namespace snake_back
         private Token Apple = null;
         private bool GameOver;
         private bool CanGenerateApple = true;
-        private Random Generator;
+        private Random RandomNumber;
         private readonly char HEAD = '@', TAIL = '*', APPLE = '?';
         /*private Limits Walls;
         private Puntuation Score;*/
@@ -26,42 +26,39 @@ namespace snake_back
         public Game()
         {
             Player = new Snake();
-            Generator = new Random();
-            CanGenerateApple = false;
-        }
-
-        public void GenerateApple()
-        {
-            Apple = new Token( Generator.Next(0, Console.WindowWidth) , Generator.Next(0, Console.WindowWidth) );
-            CanGenerateApple = false;
-        }
-
-        public void CheckEat()
-        {
-            if (Apple != null)
-            {
-                if (Player.pPosition.Equals(Apple.pPosition))
-                {
-                    Player.AddSection();
-                    Apple = null;
-                    CanGenerateApple = true;
-                }
-            }
-        }
-
-        public void Control (ConsoleKey dir)
-        {
-            Player.ChangeDir(dir);
+            RandomNumber = new Random();
         }
 
         public void Update()
         {
-            
-            if (CanGenerateApple) GenerateApple();
-            if (Apple != null) CheckEat();
-
             Player.Move();
+
+            if (CanGenerateApple)
+            {
+                //chance de generar apple
+                if (RandomNumber.Next(0, 3) > 1)
+                {
+                    Apple = new Token(RandomNumber.Next(0, Console.WindowWidth), RandomNumber.Next(0, Console.WindowHeight));
+                    CanGenerateApple = false;
+                }
+
+            } else
+            {
+                //checa si ha comido apple
+                if (Player.pPosition.Equals(Apple.pPosition))
+                {
+                    Apple = null;
+                    Player.AddSection();
+                    CanGenerateApple = true;
+                }
+            }
+
             GameOver = !Player.IsAlive();
+        }
+
+        public void Control(ConsoleKey dir)
+        {
+            Player.ChangeDir(dir);
         }
 
         public void Display()
@@ -79,7 +76,6 @@ namespace snake_back
             {
                 WriteAt(TAIL, (int)positions[i].X, (int)positions[i].Y);
             }
-
         }
 
         protected static void WriteAt(char s, int x, int y)
@@ -95,7 +91,5 @@ namespace snake_back
                 Console.WriteLine(e.Message);
             }
         }
-
-
     }
 }

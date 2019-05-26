@@ -22,9 +22,13 @@ namespace snake_sharp
                 }
                 game.Update();
                 game.Display();
-                Thread.Sleep(500);
+                Thread.Sleep(150);
                 
             }
+
+            Console.Clear();
+            Console.SetCursorPosition(Console.WindowWidth / 2 - 4, Console.WindowHeight / 2);
+            Console.WriteLine("GAME OVER");
         }
     }
 }
