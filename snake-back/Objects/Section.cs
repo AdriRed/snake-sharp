@@ -5,7 +5,7 @@ namespace snake_back.Objects
 {
     internal class Section : IMovingEntity
     {
-        private Vector2 Position;
+        private Vector2 Position, Direction;
         private IMovingEntity Father;
 
         public Vector2 pPosition
@@ -20,14 +20,29 @@ namespace snake_back.Objects
             }
         }
 
+        public Vector2 pDirection
+        {
+            get
+            {
+                return Direction;
+            }
+            set
+            {
+                Direction = value;
+            }
+        }
+
         public Section (IMovingEntity father)
         {
             this.Father = father;
+            this.Direction = Father.pDirection;
+            this.Position = Vector2.Subtract(Father.pPosition, Direction);
         }
 
         public void MoveToFatherPosition ()
         {
-            this.pPosition = Father.pPosition;
+            this.Direction = Father.pDirection;
+            this.Position = Father.pPosition;
         }
 
     }

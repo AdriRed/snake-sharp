@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "snake-sharp/1.0.0": {
-        "dependencies": {
-          "snake-back": "1.0.0"
-        },
-        "runtime": {
-          "snake-sharp.dll": {}
-        }
-      },
       "snake-back/1.0.0": {
         "runtime": {
           "snake-back.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "snake-sharp/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "snake-back/1.0.0": {
       "type": "project",
       "serviceable": false,

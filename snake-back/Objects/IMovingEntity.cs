@@ -8,5 +8,9 @@ namespace snake_back.Objects
         Vector2 pPosition {
             get; set;
         }
+        Vector2 pDirection
+        {
+            get;set;
+        }
     }
 }

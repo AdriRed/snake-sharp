@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Windows.Input;
+using System.Threading;
 using snake_back;
 
 namespace snake_sharp
@@ -7,11 +9,21 @@ namespace snake_sharp
     {
         static void Main(string[] args)
         {
-            Game Game = new Game();
+            Game game = new Game();
 
-            while (!Game.pGameOver)
+            Console.CursorVisible = false;
+
+            while (!game.pGameOver)
             {
-
+                
+                if (Console.KeyAvailable)
+                {
+                    game.Control(Console.ReadKey(true).Key);
+                }
+                game.Update();
+                game.Display();
+                Thread.Sleep(500);
+                
             }
         }
     }

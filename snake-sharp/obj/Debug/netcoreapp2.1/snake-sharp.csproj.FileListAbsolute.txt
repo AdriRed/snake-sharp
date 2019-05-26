@@ -9,3 +9,6 @@ D:\Users\Adri\Documents\GitHub\snake-sharp\snake-sharp\obj\Debug\netcoreapp2.1\s
 D:\Users\Adri\Documents\GitHub\snake-sharp\snake-sharp\obj\Debug\netcoreapp2.1\snake-sharp.AssemblyInfo.cs
 D:\Users\Adri\Documents\GitHub\snake-sharp\snake-sharp\obj\Debug\netcoreapp2.1\snake-sharp.dll
 D:\Users\Adri\Documents\GitHub\snake-sharp\snake-sharp\obj\Debug\netcoreapp2.1\snake-sharp.pdb
+D:\Users\Adri\Documents\GitHub\snake-sharp\snake-sharp\bin\Debug\netcoreapp2.1\snake-back.dll
+D:\Users\Adri\Documents\GitHub\snake-sharp\snake-sharp\bin\Debug\netcoreapp2.1\snake-back.pdb
+D:\Users\Adri\Documents\GitHub\snake-sharp\snake-sharp\obj\Debug\netcoreapp2.1\snake-sharp.csproj.CopyComplete

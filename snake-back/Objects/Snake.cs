@@ -9,9 +9,17 @@ namespace snake_back.Objects
         private Leader Head;
         private List<Section> Tail;
 
+        public Vector2 pPosition
+        {
+            get
+            {
+                return Head.pPosition;
+            }
+        }
+
         public Snake()
         {
-            Head = new Leader(Console.WindowWidth / 2, Console.WindowHeight / 2);
+            Head = new Leader(Console.WindowWidth / 2, Console.WindowHeight / 2, ConsoleKey.LeftArrow);
             Tail = new List<Section>();
 
             Tail.Add(new Section(Head));
@@ -25,9 +33,9 @@ namespace snake_back.Objects
             Head.Forward();
         }
 
-        public void ChangeDir(byte dir)
+        public void ChangeDir(ConsoleKey dir)
         {
-            Head.pLookingAt = Leader.directions[dir];
+            Head.SetDirection(dir);
         }
 
         public bool IsAlive()
@@ -35,7 +43,7 @@ namespace snake_back.Objects
             bool alive = true;
 
             Vector2 headPos = Head.pPosition;
-            if (headPos.X >= 0 && headPos.X <= Console.WindowWidth && headPos.Y >= 0 && headPos.Y <= Console.WindowHeight)
+            if (headPos.X >= 0 && headPos.X < Console.WindowWidth && headPos.Y >= 0 && headPos.Y < Console.WindowHeight)
             {
                 for (int i = 2; i < Tail.Count && alive; i++)
                 {

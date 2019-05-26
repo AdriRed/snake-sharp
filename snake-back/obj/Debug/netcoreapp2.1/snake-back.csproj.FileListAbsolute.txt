@@ -1,0 +1,9 @@
+D:\Users\Adri\Documents\GitHub\snake-sharp\snake-back\bin\Debug\netcoreapp2.1\snake-back.deps.json
+D:\Users\Adri\Documents\GitHub\snake-sharp\snake-back\bin\Debug\netcoreapp2.1\snake-back.dll
+D:\Users\Adri\Documents\GitHub\snake-sharp\snake-back\bin\Debug\netcoreapp2.1\snake-back.pdb
+D:\Users\Adri\Documents\GitHub\snake-sharp\snake-back\obj\Debug\netcoreapp2.1\snake-back.csprojAssemblyReference.cache
+D:\Users\Adri\Documents\GitHub\snake-sharp\snake-back\obj\Debug\netcoreapp2.1\snake-back.csproj.CoreCompileInputs.cache
+D:\Users\Adri\Documents\GitHub\snake-sharp\snake-back\obj\Debug\netcoreapp2.1\snake-back.AssemblyInfoInputs.cache
+D:\Users\Adri\Documents\GitHub\snake-sharp\snake-back\obj\Debug\netcoreapp2.1\snake-back.AssemblyInfo.cs
+D:\Users\Adri\Documents\GitHub\snake-sharp\snake-back\obj\Debug\netcoreapp2.1\snake-back.dll
+D:\Users\Adri\Documents\GitHub\snake-sharp\snake-back\obj\Debug\netcoreapp2.1\snake-back.pdb
