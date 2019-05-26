@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Numerics;
+﻿using System.Numerics;
 
 namespace snake_back.Objects
 {
@@ -8,7 +6,8 @@ namespace snake_back.Objects
     {
         private Vector2 Position;
 
-        public Vector2 pPosition {
+        public Vector2 pPosition
+        {
             get
             {
                 return Position;
@@ -19,7 +18,7 @@ namespace snake_back.Objects
             }
         }
 
-        public Token (float x, float y)
+        public Token(float x, float y)
         {
             Position = new Vector2(x, y);
         }

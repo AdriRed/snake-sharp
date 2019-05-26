@@ -1,7 +1,7 @@
-﻿using System;
-using System.Numerics;
+﻿using snake_back.Objects;
+using System;
 using System.Collections.Generic;
-using snake_back.Objects;
+using System.Numerics;
 
 namespace snake_back
 {
@@ -16,7 +16,8 @@ namespace snake_back
         /*private Limits Walls;
         private Puntuation Score;*/
 
-        public bool pGameOver {
+        public bool pGameOver
+        {
             get
             {
                 return GameOver;
@@ -42,7 +43,8 @@ namespace snake_back
                     CanGenerateApple = false;
                 }
 
-            } else
+            }
+            else
             {
                 //checa si ha comido apple
                 if (Player.pPosition.Equals(Apple.pPosition))
@@ -68,9 +70,9 @@ namespace snake_back
             Console.Clear();
 
             if (Apple != null)
-                WriteAt(APPLE, (int) Apple.pPosition.X, (int) Apple.pPosition.Y);
+                WriteAt(APPLE, (int)Apple.pPosition.X, (int)Apple.pPosition.Y);
 
-            WriteAt(HEAD, (int) positions[0].X, (int) positions[0].Y);
+            WriteAt(HEAD, (int)positions[0].X, (int)positions[0].Y);
 
             for (int i = 1; i < positions.Count; i++)
             {

@@ -49,7 +49,8 @@ namespace snake_back.Objects
                 {
                     if (headPos.Equals(Tail[i].pPosition)) alive = false;
                 }
-            } else
+            }
+            else
             {
                 alive = false;
             }
@@ -65,12 +66,12 @@ namespace snake_back.Objects
             }
         }
 
-        public void AddSection ()
+        public void AddSection()
         {
             Tail.Add(new Section(LastSection()));
         }
 
-        internal IMovingEntity LastSection ()
+        internal IMovingEntity LastSection()
         {
             return Tail[Tail.Count - 1];
         }

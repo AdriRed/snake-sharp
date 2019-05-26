@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Windows.Input;
 using System.Threading;
 using snake_back;
 
@@ -22,7 +21,7 @@ namespace snake_sharp
                 }
                 game.Update();
                 game.Display();
-                Thread.Sleep(150);
+                Thread.Sleep(100);
                 
             }
 

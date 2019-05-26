@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace snake_back.Objects
+﻿namespace snake_back.Objects
 {
     internal class Puntuation
     {

@@ -13,7 +13,7 @@ namespace snake_back.Objects
               new Vector2(-1, 0),
               new Vector2(0, -1) };
 
-       
+
         public Vector2 pPosition
         {
             get
@@ -26,7 +26,8 @@ namespace snake_back.Objects
             }
         }
 
-        public Vector2 pDirection {
+        public Vector2 pDirection
+        {
             get
             {
                 return Direction;
@@ -43,7 +44,7 @@ namespace snake_back.Objects
             this.Position = new Vector2(x, y);
         }
 
-        public void SetDirection (ConsoleKey key)
+        public void SetDirection(ConsoleKey key)
         {
             Vector2 direction;
 

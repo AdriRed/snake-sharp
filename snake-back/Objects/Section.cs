@@ -1,5 +1,4 @@
-﻿using System;
-using System.Numerics;
+﻿using System.Numerics;
 
 namespace snake_back.Objects
 {
@@ -32,14 +31,14 @@ namespace snake_back.Objects
             }
         }
 
-        public Section (IMovingEntity father)
+        public Section(IMovingEntity father)
         {
             this.Father = father;
             this.Direction = Father.pDirection;
             this.Position = Vector2.Subtract(Father.pPosition, Direction);
         }
 
-        public void MoveToFatherPosition ()
+        public void MoveToFatherPosition()
         {
             this.Direction = Father.pDirection;
             this.Position = Father.pPosition;
