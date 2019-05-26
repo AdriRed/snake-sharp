@@ -1,5 +1,5 @@
 ﻿using System;
-
+using snake_back;
 
 namespace snake_sharp
 {
@@ -7,7 +7,12 @@ namespace snake_sharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Game Game = new Game();
+
+            while (!Game.pGameOver)
+            {
+
+            }
         }
     }
 }

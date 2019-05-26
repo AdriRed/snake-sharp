@@ -6,4 +6,8 @@
     <RootNamespace>snake_sharp</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\snake-back\snake-back.csproj" />
+  </ItemGroup>
+
 </Project>

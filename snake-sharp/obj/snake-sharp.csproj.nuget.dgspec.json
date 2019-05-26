@@ -4,6 +4,58 @@
     "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-sharp\\snake-sharp.csproj": {}
   },
   "projects": {
+    "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-back\\snake-back.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-back\\snake-back.csproj",
+        "projectName": "snake-back",
+        "projectPath": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-back\\snake-back.csproj",
+        "packagesPath": "C:\\Users\\Adri\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-back\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Adri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-sharp\\snake-sharp.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -29,7 +81,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-back\\snake-back.csproj": {
+                "projectPath": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-back\\snake-back.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

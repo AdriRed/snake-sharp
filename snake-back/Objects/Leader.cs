@@ -7,6 +7,12 @@ namespace snake_back.Objects
     {
 
         private Vector2 LookingAt, Position;
+        public static readonly Vector2[] directions =
+            { new Vector2(1, 0),
+              new Vector2(0, 1),
+              new Vector2(-1, 0),
+              new Vector2(0, -1) };
+
 
 
         public Vector2 pPosition

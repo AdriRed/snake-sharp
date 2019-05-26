@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "snake-back/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/snake-back.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/snake-back.dll": {}
+        }
       }
     }
   },
@@ -680,11 +690,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "snake-back/1.0.0": {
+      "type": "project",
+      "path": "../snake-back/snake-back.csproj",
+      "msbuildProject": "../snake-back/snake-back.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "snake-back >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -716,7 +732,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-back\\snake-back.csproj": {
+              "projectPath": "D:\\Users\\Adri\\Documents\\GitHub\\snake-sharp\\snake-back\\snake-back.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
